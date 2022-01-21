@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">test</string>
-    <!-- Strings related to login -->
+
+    <!-- TODO apply convention name -->
     <string name="prompt_email">example@domain.com</string>
     <string name="prompt_password">***********</string>
     <string name="action_sign_in">Sign in or register</string>
@@ -15,4 +16,23 @@
     <string name="title_Create_Account">Créer un compte</string>
     <string name="title_Login">Authentification</string>
     <string name="title_activity_login">Connexion</string>
+    <string name="title_Activity_Register">Créer un compte</string>
+
+
+    <string name="activity_register_tv_lastname">*Nom</string>
+    <string name="activity_register_et_lastname">Doe</string>
+    <string name="activity_register_tv_firstname">*Prénom</string>
+    <string name="activity_register_et_firstname">Jhon</string>
+    <string name="activity_register_tv_phone">*Téléphone</string>
+    <string name="activity_register_et_phone">079 300 20 10</string>
+    <string name="activity_register_tv_mail">*Email</string>
+    <string name="activity_register_et_mail">jhon.doe@example.com</string>
+    <string name="activity_register_tv_password">*Mot de passe</string>
+    <string name="activity_register_et_password">**********</string>
+    <string name="activity_register_tv_password_confirmation">*Confirmer le mot de passe</string>
+    <string name="activity_register_et_password_confirmation">**********</string>
+    <string name="activity_register_btn_create">Créer un compte</string>
+    <string name="activity_register_chk_terms_and_policy">I agree to the Terms of Use and Privacy Policy</string>
+
+
 </resources>
