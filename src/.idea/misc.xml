@@ -3,10 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+
         <entry key="..\:/Users/Melodie.OHAN/Documents/Projects/doggo/src/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.197265625" />
         <entry key="..\:/Users/Melodie.OHAN/Documents/Projects/doggo/src/app/src/main/res/layout/activity_login.xml" value="0.22871376811594202" />
         <entry key="..\:/Users/Melodie.OHAN/Documents/Projects/doggo/src/app/src/main/res/layout/activity_main.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/Melodie.OHAN/Documents/Projects/doggo/src/app/src/main/res/layout/activity_register_user.xml" value="0.25" />
+        <entry key="..\:/Users/Anthony.BOUILLANT/Programmation/doggo/src/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.15261044176706828" />
+        <entry key="..\:/Users/Anthony.BOUILLANT/Programmation/doggo/src/app/src/main/res/layout/activity_login.xml" value="0.2375" />
+        <entry key="..\:/Users/Anthony.BOUILLANT/Programmation/doggo/src/app/src/main/res/layout/activity_main.xml" value="0.2957427536231884" />
+        <entry key="..\:/Users/Anthony.BOUILLANT/Programmation/doggo/src/app/src/main/res/layout/fragment_edit_dog.xml" value="0.33" />
+        <entry key="..\:/Users/Anthony.BOUILLANT/Programmation/doggo/src/app/src/main/res/layout/fragment_profile_edit.xml" value="0.33" />
+        <entry key="..\:/Users/Anthony.BOUILLANT/Programmation/doggo/src/app/src/main/res/layout/fragment_register_dog.xml" value="0.33" />
+        <entry key="..\:/Users/Anthony.BOUILLANT/Programmation/doggo/src/app/src/main/res/layout/fragment_register_dogs.xml" value="0.20520833333333333" />
       </map>
     </option>
   </component>
