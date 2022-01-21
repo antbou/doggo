@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:autofillHints="@string/activity_register_et_password_confirmation"
     tools:context=".RegisterUserActivity">
 
     <TextView
@@ -37,23 +38,34 @@
 
         <EditText
             android:id="@+id/activity_register_et_password_confirmation"
-            android:layout_width="308dp"
-            android:layout_height="41dp"
+            android:layout_width="321dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="464dp"
+            android:layout_marginBottom="9dp"
+            android:autofillHints="@string/activity_register_et_password_confirmation"
             android:ems="10"
+            android:hint="@string/activity_register_et_password"
             android:inputType="textPassword"
-            android:text="@string/activity_register_et_password_confirmation"
+            android:password="true"
             android:textSize="16sp"
-            tools:layout_editor_absoluteX="21dp"
-            tools:layout_editor_absoluteY="464dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/activity_register_tv_password_confirmation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="438dp"
+            android:layout_marginBottom="61dp"
+            android:labelFor="@id/activity_register_et_password_confirmation"
             android:text="@string/activity_register_tv_password_confirmation"
             android:textSize="16sp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="438dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/activity_register_tv_lastname"
@@ -62,6 +74,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="481dp"
+            android:labelFor="@id/activity_register_et_firstname"
             android:text="@string/activity_register_tv_lastname"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -69,14 +82,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/activity_register_et_lastname"
-            android:layout_width="310dp"
-            android:layout_height="47dp"
+            android:id="@+id/activity_register_et_firstname"
+            android:layout_width="321dp"
+            android:layout_height="52dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="122dp"
             android:layout_marginBottom="352dp"
-            android:hint="hint"
-            android:text="@string/activity_register_et_lastname"
+            android:hint="@string/activity_register_et_firstname"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -89,6 +101,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="99dp"
             android:layout_marginBottom="398dp"
+            android:labelFor="@id/activity_register_et_lastname"
             android:text="@string/activity_register_tv_firstname"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -96,14 +109,13 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/username"
-            android:layout_width="309dp"
-            android:layout_height="42dp"
+            android:id="@+id/activity_register_et_lastname"
+            android:layout_width="321dp"
+            android:layout_height="52dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="48dp"
             android:layout_marginBottom="434dp"
-            android:hint="hint"
-            android:text="@string/activity_register_et_firstname"
+            android:hint="@string/activity_register_et_lastname"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -111,14 +123,14 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/activity_register_et_mail"
-            android:layout_width="311dp"
-            android:layout_height="48dp"
+            android:layout_width="321dp"
+            android:layout_height="52dp"
             android:layout_marginStart="17dp"
             android:layout_marginTop="208dp"
             android:layout_marginEnd="15dp"
             android:layout_marginBottom="266dp"
-            android:hint="hint"
-            android:text="@string/activity_register_et_mail"
+            android:hint="@string/activity_register_et_mail"
+            android:labelFor="@id/activity_register_tv_mail"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -132,6 +144,7 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="185dp"
             android:layout_marginBottom="312dp"
+            android:labelFor="@id/activity_register_et_mail"
             android:text="@string/activity_register_tv_mail"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -145,6 +158,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="271dp"
             android:layout_marginBottom="226dp"
+            android:labelFor="@id/activity_register_et_phone"
             android:text="@string/activity_register_tv_phone"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -154,13 +168,14 @@
         <EditText
             android:id="@+id/activity_register_et_phone"
             android:layout_width="312dp"
-            android:layout_height="45dp"
+            android:layout_height="52dp"
             android:layout_marginStart="17dp"
             android:layout_marginTop="302dp"
             android:layout_marginBottom="174dp"
             android:ems="10"
+            android:hint="@string/activity_register_et_phone"
             android:inputType="number"
-            android:text="@string/activity_register_et_phone"
+            android:labelFor="@id/activity_register_tv_phone"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -170,21 +185,32 @@
             android:id="@+id/activity_register_tv_password"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="362dp"
+            android:layout_marginBottom="137dp"
+            android:labelFor="@id/activity_register_et_password"
             android:text="@string/activity_register_tv_password"
             android:textSize="16sp"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="362dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/activity_register_et_password"
-            android:layout_width="308dp"
-            android:layout_height="41dp"
+            android:layout_width="321dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="21dp"
+            android:layout_marginTop="388dp"
+            android:layout_marginBottom="92dp"
+            android:autofillHints="@string/activity_register_et_password"
             android:ems="10"
+            android:hint="@string/activity_register_et_password"
             android:inputType="textPassword"
-            android:text="@string/activity_register_et_password"
+            android:password="true"
             android:textSize="16sp"
-            tools:layout_editor_absoluteX="21dp"
-            tools:layout_editor_absoluteY="388dp" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -204,7 +230,7 @@
     <CheckBox
         android:id="@+id/activity_register_chk_terms_and_policy"
         android:layout_width="342dp"
-        android:layout_height="41dp"
+        android:layout_height="52dp"
         android:layout_marginStart="37dp"
         android:layout_marginTop="606dp"
         android:layout_marginBottom="84dp"
