@@ -1,14 +1,4 @@
 <resources>
-    <string name="app_name">What The Dog</string>
-    <!-- Strings related to login -->
-    <string name="prompt_email">Email</string>
-    <string name="prompt_password">Password</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome!"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
 
     <string-array name="genre">
         <item>Mâle</item>
@@ -30,5 +20,22 @@
         <item>Rage</item>
         <item>Diabète</item>
     </string-array>
+
+    <string name="app_name">test</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">example@domain.com</string>
+    <string name="prompt_password">***********</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="title_Mail">Email</string>
+    <string name="title_Password">Mot de passe</string>
+    <string name="title_Forgot_Password">Mot de passe oublié?</string>
+    <string name="title_Create_Account">Créer un compte</string>
+    <string name="title_Login">Authentification</string>
+    <string name="title_activity_login">Connexion</string>
 
 </resources>
