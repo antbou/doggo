@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profile">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/fragment_profile_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".fragment_races">
+
+        <TextView
+            android:id="@+id/fragment_profile_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="171dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="171dp"
+            android:layout_marginBottom="631dp"
+            android:text="Profile"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="@dimen/title_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragment_profile_tv_my_dogs"
+            android:layout_width="348dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="311dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="366dp"
+            android:background="#7F3131"
+            android:gravity="center"
+            android:text="Mes chiens"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragment_profile_tv_my_profile"
+            android:layout_width="348dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="31dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="537dp"
+            android:background="#7F3131"
+            android:gravity="center"
+            android:text="Mon profile"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragment_profile_tv_user"
+            android:layout_width="310dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="214dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="465dp"
+            android:background="#D5D4D3"
+            android:gravity="center"
+            android:outlineSpotShadowColor="#000000"
+            android:text="Doe, Jane"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragment_profile_tv_dog1"
+            android:layout_width="310dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="390dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="289dp"
+            android:background="#D5D4D3"
+            android:gravity="center"
+            android:outlineSpotShadowColor="#000000"
+            android:text="Rox"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fragment_profile_tv_dog2"
+            android:layout_width="310dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="462dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="217dp"
+            android:background="#D5D4D3"
+            android:gravity="center"
+            android:outlineSpotShadowColor="#000000"
+            android:text="Rocky"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
