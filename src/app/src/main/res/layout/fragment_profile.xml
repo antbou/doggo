@@ -48,7 +48,7 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginEnd="15dp"
                 android:layout_marginBottom="6dp"
-                android:background="#776860"
+                android:background="#3A3939"
                 android:gravity="center"
                 android:text="Mon profile"
                 android:textColor="#fff"
@@ -62,13 +62,17 @@
 
             <ImageButton
                 android:id="@+id/fragment_profile_btn_my_profile_more"
-                android:layout_width="64dp"
-                android:layout_height="54dp"
-                android:layout_marginStart="313dp"
-                android:layout_marginTop="12dp"
-                android:backgroundTint="#776860"
-                android:contentDescription="More"
-                android:src="@drawable/baseline_arrow_drop_down_white_48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="318dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="33dp"
+                android:layout_marginBottom="6dp"
+                android:backgroundTint="#3A3939"
+                android:contentDescription="My profile more"
+                android:src="@drawable/baseline_more_horiz_white_36"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -319,7 +323,7 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="31dp"
                 android:layout_marginBottom="8dp"
-                android:background="#776860"
+                android:background="#3A3939"
                 android:gravity="center"
                 android:text="Mes chiens"
                 android:textColor="#fff"
@@ -337,7 +341,7 @@
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="322dp"
                 android:layout_marginBottom="12dp"
-                android:backgroundTint="#776860"
+                android:backgroundTint="#3A3939"
                 android:contentDescription="Add"
                 android:src="@drawable/baseline_add_circle_white_36"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -346,20 +350,22 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
-                android:id="@+id/fragment_profile_btn_my_profile_more3"
-                android:layout_width="64dp"
-                android:layout_height="54dp"
-                android:layout_marginStart="314dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="31dp"
-                android:layout_marginBottom="8dp"
-                android:backgroundTint="#776860"
-                android:contentDescription="More"
-                android:src="@drawable/baseline_arrow_drop_down_white_48"
+                android:id="@+id/fragment_profile_btn_my_dogs_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="318dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="33dp"
+                android:layout_marginBottom="6dp"
+                android:backgroundTint="#3A3939"
+                android:contentDescription="My dogs more"
+                android:src="@drawable/baseline_more_horiz_white_36"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
