@@ -34,7 +34,7 @@ class fragment_register : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_register, container, false)
+        return inflater.inflate(R.layout.fragment_register_user, container, false)
     }
 
     companion object {
