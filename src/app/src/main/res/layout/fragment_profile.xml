@@ -2,12 +2,14 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frame_profile"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".profile">
+    tools:context=".profile"
+    tools:layout_editor_absoluteY="81dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/fragment_profile_frame"
+        android:id="@+id/fragment_profile_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".fragment_races">
@@ -15,39 +17,35 @@
         <TextView
             android:id="@+id/fragment_profile_tv_title"
             android:layout_width="96dp"
-            android:layout_height="44dp"
-            android:layout_marginStart="157dp"
-            android:layout_marginTop="77dp"
-            android:layout_marginEnd="158dp"
-            android:layout_marginBottom="610dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="36dp"
             android:text="Profile"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="@dimen/title_size"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/constraint_my_profile"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout3"
+            android:id="@+id/constraint_my_profile"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginTop="157dp"
-            android:layout_marginBottom="2dp"
-            app:layout_constraintBottom_toTopOf="@+id/constraintLayout6"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraint_user"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/fragment_profile_tv_title">
 
             <TextView
                 android:id="@+id/fragment_profile_tv_my_profile"
                 android:layout_width="348dp"
                 android:layout_height="54dp"
                 android:layout_marginStart="29dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginBottom="6dp"
+                android:layout_marginEnd="38dp"
+                android:layout_marginBottom="10dp"
                 android:background="@color/doggo_primary"
                 android:gravity="center"
                 android:text="Mon profile"
@@ -55,19 +53,16 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageButton
                 android:id="@+id/fragment_profile_btn_my_profile_more"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="318dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginEnd="33dp"
-                android:layout_marginBottom="6dp"
+                android:layout_marginStart="317dp"
+                android:layout_marginEnd="38dp"
+                android:layout_marginBottom="9dp"
                 android:backgroundTint="#3A3939"
                 android:contentDescription="My profile more"
                 android:src="@drawable/baseline_more_horiz_white_36"
@@ -79,186 +74,23 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout4"
+            android:id="@+id/constraint_user"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginBottom="171dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="26dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraint_my_dogs"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5">
-
-            <TextView
-                android:id="@+id/fragment_profile_tv_my_dog2"
-                android:layout_width="310dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="53dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="53dp"
-                android:layout_marginBottom="11dp"
-                android:background="@color/doggo_secondary"
-                android:gravity="center"
-                android:outlineSpotShadowColor="#000000"
-                android:text="Rocky"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageButton
-                android:id="@+id/fragment_profile_ib_my_dog_profile2"
-                android:layout_width="63dp"
-                android:layout_height="49dp"
-                android:layout_marginStart="56dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="297dp"
-                android:layout_marginBottom="14dp"
-                android:background="#988D89"
-                android:contentDescription="profile"
-                android:src="@drawable/baseline_pets_white_36"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageButton
-                android:id="@+id/fragment_profile_ib_my_dog_edit2"
-                android:layout_width="55dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="258dp"
-                android:layout_marginTop="15dp"
-                android:layout_marginEnd="103dp"
-                android:layout_marginBottom="14dp"
-                android:backgroundTint="#988D89"
-                android:contentDescription="edit"
-                android:src="@drawable/baseline_edit_white_36"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageButton
-                android:id="@+id/fragment_profile_ib_my_dog_trash2"
-                android:layout_width="54dp"
-                android:layout_height="49dp"
-                android:layout_marginStart="312dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="50dp"
-                android:layout_marginBottom="14dp"
-                android:backgroundTint="#988D89"
-                android:contentDescription="delete"
-                android:src="@drawable/baseline_delete_white_36"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout5"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginBottom="2dp"
-            app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout6">
-
-            <TextView
-                android:id="@+id/fragment_profile_tv_my_dog1"
-                android:layout_width="310dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="53dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="53dp"
-                android:layout_marginBottom="11dp"
-                android:background="@color/doggo_secondary"
-                android:gravity="center"
-                android:outlineSpotShadowColor="#000000"
-                android:text="Rox"
-                android:textColor="@color/white"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <ImageButton
-                android:id="@+id/fragment_profile_ib_my_dog_profile1"
-                android:layout_width="63dp"
-                android:layout_height="49dp"
-                android:layout_marginStart="53dp"
-                android:layout_marginTop="17dp"
-                android:layout_marginEnd="300dp"
-                android:layout_marginBottom="13dp"
-                android:background="#988D89"
-                android:contentDescription="profile"
-                android:src="@drawable/baseline_pets_white_36"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
-
-            <ImageButton
-                android:id="@+id/fragment_profile_ib_my_dog_edit1"
-                android:layout_width="55dp"
-                android:layout_height="50dp"
-                android:layout_marginStart="254dp"
-                android:layout_marginTop="17dp"
-                android:layout_marginEnd="106dp"
-                android:layout_marginBottom="12dp"
-                android:backgroundTint="#988D89"
-                android:contentDescription="edit"
-                android:src="@drawable/baseline_edit_white_36"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-            <ImageButton
-                android:id="@+id/fragment_profile_ib_my_dog_trash1"
-                android:layout_width="54dp"
-                android:layout_height="49dp"
-                android:layout_marginStart="310dp"
-                android:layout_marginTop="17dp"
-                android:layout_marginEnd="51dp"
-                android:layout_marginBottom="13dp"
-                android:backgroundTint="#988D89"
-                android:contentDescription="delete"
-                android:src="@drawable/baseline_delete_white_36"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout6"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginStart="1dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginBottom="85dp"
-            app:layout_constraintBottom_toTopOf="@+id/constraintLayout5"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3">
+            app:layout_constraintTop_toBottomOf="@+id/constraint_my_profile">
 
             <TextView
                 android:id="@+id/fragment_profile_tv_profile"
                 android:layout_width="310dp"
                 android:layout_height="52dp"
-                android:layout_marginStart="53dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="53dp"
-                android:layout_marginBottom="11dp"
+                android:layout_marginStart="49dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginBottom="5dp"
                 android:background="@color/doggo_secondary"
                 android:gravity="center"
                 android:outlineSpotShadowColor="#000000"
@@ -274,26 +106,27 @@
                 android:id="@+id/fragment_profile_ib_profile_profile"
                 android:layout_width="57dp"
                 android:layout_height="52dp"
-                android:layout_marginStart="50dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="303dp"
-                android:layout_marginBottom="3dp"
+                android:layout_marginStart="49dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="309dp"
+                android:layout_marginBottom="7dp"
                 android:background="#988D89"
                 android:contentDescription="profile"
                 android:src="@drawable/baseline_person_white_36"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.25"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
 
             <ImageButton
                 android:id="@+id/fragment_profile_ib_profile_edit"
                 android:layout_width="58dp"
                 android:layout_height="55dp"
-                android:layout_marginStart="302dp"
-                android:layout_marginTop="7dp"
-                android:layout_marginEnd="50dp"
-                android:layout_marginBottom="1dp"
+                android:layout_marginStart="301dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginBottom="9dp"
                 android:backgroundTint="#988D89"
                 android:contentDescription="edit"
                 android:src="@drawable/baseline_edit_white_36"
@@ -305,23 +138,22 @@
         </androidx.constraintlayout.widget.ConstraintLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout7"
+            android:id="@+id/constraint_my_dogs"
             android:layout_width="0dp"
-            android:layout_height="78dp"
-            android:layout_marginStart="1dp"
-            android:layout_marginEnd="1dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="14dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraint_dog1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@+id/constraint_user">
 
             <TextView
                 android:id="@+id/fragment_profile_tv_my_dogs"
                 android:layout_width="347dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginEnd="31dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="39dp"
                 android:layout_marginBottom="8dp"
                 android:background="@color/doggo_primary"
                 android:gravity="center"
@@ -337,10 +169,10 @@
                 android:id="@+id/fragment_profile_ib_my_dogs_add"
                 android:layout_width="56dp"
                 android:layout_height="48dp"
-                android:layout_marginStart="31dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginEnd="322dp"
-                android:layout_marginBottom="12dp"
+                android:layout_marginStart="29dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="330dp"
+                android:layout_marginBottom="8dp"
                 android:backgroundTint="#3A3939"
                 android:contentDescription="Add"
                 android:src="@drawable/baseline_add_circle_white_36"
@@ -353,20 +185,175 @@
                 android:id="@+id/fragment_profile_btn_my_dogs_more"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="318dp"
-                android:layout_marginTop="18dp"
-                android:layout_marginEnd="33dp"
-                android:layout_marginBottom="6dp"
+                android:layout_marginStart="316dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="39dp"
+                android:layout_marginBottom="4dp"
                 android:backgroundTint="#3A3939"
                 android:contentDescription="My dogs more"
                 android:src="@drawable/baseline_more_horiz_white_36"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="1.0" />
+                app:layout_constraintTop_toTopOf="parent" />
 
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_dog1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="11dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraint_dog2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_my_dogs">
+
+            <TextView
+                android:id="@+id/fragment_profile_tv_my_dog1"
+                android:layout_width="310dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginBottom="5dp"
+                android:background="@color/doggo_secondary"
+                android:gravity="center"
+                android:outlineSpotShadowColor="#000000"
+                android:text="Rox"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/fragment_profile_ib_my_dog_profile1"
+                android:layout_width="63dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="299dp"
+                android:layout_marginBottom="7dp"
+                android:background="#988D89"
+                android:contentDescription="profile"
+                android:src="@drawable/baseline_pets_white_36"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/fragment_profile_ib_my_dog_edit1"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="254dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="105dp"
+                android:layout_marginBottom="7dp"
+                android:backgroundTint="#988D89"
+                android:contentDescription="edit"
+                android:src="@drawable/baseline_edit_white_36"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/fragment_profile_ib_my_dog_trash1"
+                android:layout_width="54dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="309dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginBottom="8dp"
+                android:backgroundTint="#988D89"
+                android:contentDescription="delete"
+                android:src="@drawable/baseline_delete_white_36"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_dog2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="102dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraint_dog1">
+
+            <TextView
+                android:id="@+id/fragment_profile_tv_my_dog2"
+                android:layout_width="310dp"
+                android:layout_height="52dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="53dp"
+                android:layout_marginBottom="7dp"
+                android:background="@color/doggo_secondary"
+                android:gravity="center"
+                android:outlineSpotShadowColor="#000000"
+                android:text="Rox"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/fragment_profile_ib_my_dog_trash2"
+                android:layout_width="54dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="309dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="52dp"
+                android:layout_marginBottom="10dp"
+                android:backgroundTint="#988D89"
+                android:contentDescription="delete"
+                android:src="@drawable/baseline_delete_white_36"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/fragment_profile_ib_my_dog_edit2"
+                android:layout_width="55dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="253dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="107dp"
+                android:layout_marginBottom="9dp"
+                android:backgroundTint="#988D89"
+                android:contentDescription="edit"
+                android:src="@drawable/baseline_edit_white_36"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageButton
+                android:id="@+id/fragment_profile_ib_my_dog_profile2"
+                android:layout_width="63dp"
+                android:layout_height="49dp"
+                android:layout_marginStart="52dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="300dp"
+                android:layout_marginBottom="7dp"
+                android:background="#988D89"
+                android:contentDescription="profile"
+                android:src="@drawable/baseline_pets_white_36"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

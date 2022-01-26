@@ -6,261 +6,272 @@
     android:layout_height="match_parent"
     tools:context=".fragment_register">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/fragment_login_frame"
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".RegisterUserActivity">
+        android:layout_height="535dp"
+        android:fillViewport="true">
 
-        <TextView
-            android:id="@+id/fragment_register_tv_title"
-            android:layout_width="404dp"
-            android:layout_height="47dp"
-            android:layout_marginStart="129dp"
-            android:layout_marginTop="29dp"
-            android:layout_marginEnd="105dp"
-            android:layout_marginBottom="670dp"
-            android:text="Inscription"
-            android:textAlignment="center"
-            android:textColor="@android:color/primary_text_light"
-            android:textSize="@dimen/title_size"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.555"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="366dp"
-            android:layout_height="508dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="78dp"
-            android:layout_marginEnd="35dp"
-            android:layout_marginBottom="132dp"
-            android:background="@color/doggo_form_background"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/fragment_login_frame"
+                android:layout_width="match_parent"
+                android:layout_height="754dp"
+                tools:context=".RegisterUserActivity">
 
-            <EditText
-                android:id="@+id/fragment_register_et_confirmation"
-                android:layout_width="321dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="21dp"
-                android:layout_marginTop="464dp"
-                android:layout_marginBottom="9dp"
-                android:autofillHints="**************"
-                android:ems="10"
-                android:hint="**************"
-                android:inputType="textPassword"
-                android:password="true"
-                android:textSize="@dimen/form_elem_size"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/fragment_login_btn_register"
+                    android:layout_width="165dp"
+                    android:layout_height="0dp"
+                    android:layout_gravity="start"
+                    android:layout_marginBottom="36dp"
+                    android:enabled="false"
+                    android:text="Connexion"
+                    android:textSize="@dimen/label_size"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fragment_register_tv_title"
+                    app:rippleColor="#000000" />
 
-            <TextView
-                android:id="@+id/fragment_register_tv_confirmation"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="438dp"
-                android:layout_marginBottom="61dp"
-                android:labelFor="@id/fragment_register_et_confirmation"
-                android:text="*Confirmer mot de passe"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/label_size"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <TextView
+                    android:id="@+id/fragment_register_tv_title"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="29dp"
+                    android:layout_marginEnd="3dp"
+                    android:layout_marginBottom="590dp"
+                    android:text="Inscription"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/primary_text_light"
+                    android:textSize="@dimen/title_size"
+                    app:layout_constraintBottom_toTopOf="@+id/fragment_login_btn_register"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/fragment_register_tv_lastname"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="16dp"
-                android:layout_marginBottom="481dp"
-                android:labelFor="@id/fragment_register_tv_firstname"
-                android:text="*Nom"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/label_size"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout3"
+                    android:layout_width="366dp"
+                    android:layout_height="508dp"
+                    android:layout_marginStart="22dp"
+                    android:layout_marginTop="78dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="132dp"
+                    android:background="@color/doggo_form_background"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.027">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/fragment_register_tv_firstname"
-                android:layout_width="321dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="122dp"
-                android:layout_marginBottom="352dp"
-                android:hint="Doe"
-                android:textSize="@dimen/form_elem_size"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    <EditText
+                        android:id="@+id/fragment_register_et_confirmation"
+                        android:layout_width="323dp"
+                        android:layout_height="56dp"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="464dp"
+                        android:layout_marginBottom="9dp"
+                        android:autofillHints="**************"
+                        android:ems="10"
+                        android:hint="**************"
+                        android:inputType="textPassword"
+                        android:password="true"
+                        android:textSize="@dimen/form_elem_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/activity_register_tv_firstname"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="99dp"
-                android:layout_marginBottom="398dp"
-                android:labelFor="@id/fragment_register_et_lastname"
-                android:text="*Prénom"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/label_size"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/fragment_register_tv_confirmation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="438dp"
+                        android:layout_marginBottom="61dp"
+                        android:labelFor="@id/fragment_register_et_confirmation"
+                        android:text="*Confirmer mot de passe"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/label_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/fragment_register_et_lastname"
-                android:layout_width="321dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="48dp"
-                android:layout_marginBottom="434dp"
-                android:hint="Jhon"
-                android:textSize="@dimen/form_elem_size"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.846" />
+                    <TextView
+                        android:id="@+id/fragment_register_tv_lastname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="481dp"
+                        android:labelFor="@id/fragment_register_tv_firstname"
+                        android:text="*Nom"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/label_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/fragment_register_et_mail"
-                android:layout_width="321dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="17dp"
-                android:layout_marginTop="208dp"
-                android:layout_marginEnd="15dp"
-                android:layout_marginBottom="266dp"
-                android:hint="jhon.doe@domain.com"
-                android:labelFor="@id/fragment_register_tv_mail"
-                android:textSize="@dimen/form_elem_size"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.222"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0" />
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_register_tv_firstname"
+                        android:layout_width="321dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="122dp"
+                        android:layout_marginBottom="352dp"
+                        android:hint="Doe"
+                        android:textSize="@dimen/form_elem_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/fragment_register_tv_mail"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="185dp"
-                android:layout_marginBottom="312dp"
-                android:labelFor="@id/fragment_register_et_mail"
-                android:text="*Email"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/label_size"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/activity_register_tv_firstname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="99dp"
+                        android:layout_marginBottom="398dp"
+                        android:labelFor="@id/fragment_register_et_lastname"
+                        android:text="*Prénom"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/label_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-            <TextView
-                android:id="@+id/fragment_register_tv_phone"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="271dp"
-                android:layout_marginBottom="226dp"
-                android:labelFor="@id/activity_register_et_phone"
-                android:text="*Téléphone"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/label_size"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_register_et_lastname"
+                        android:layout_width="321dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="48dp"
+                        android:layout_marginBottom="434dp"
+                        android:hint="Jhon"
+                        android:textSize="@dimen/form_elem_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.846" />
 
-            <EditText
-                android:id="@+id/activity_register_et_phone"
-                android:layout_width="317dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="17dp"
-                android:layout_marginTop="302dp"
-                android:layout_marginBottom="174dp"
-                android:ems="10"
-                android:hint="079 700 20 10"
-                android:inputType="number"
-                android:labelFor="@id/fragment_register_tv_phone"
-                android:textSize="@dimen/form_elem_size"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/fragment_register_et_mail"
+                        android:layout_width="321dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="208dp"
+                        android:layout_marginEnd="15dp"
+                        android:layout_marginBottom="266dp"
+                        android:hint="jhon.doe@domain.com"
+                        android:labelFor="@id/fragment_register_tv_mail"
+                        android:textSize="@dimen/form_elem_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.222"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0" />
 
-            <TextView
-                android:id="@+id/fragment_register_tv_password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="362dp"
-                android:layout_marginBottom="137dp"
-                android:labelFor="@id/activity_register_et_password"
-                android:text="*Mot de passe"
-                android:textColor="@android:color/black"
-                android:textSize="@dimen/label_size"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/fragment_register_tv_mail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="185dp"
+                        android:layout_marginBottom="312dp"
+                        android:labelFor="@id/fragment_register_et_mail"
+                        android:text="*Email"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/label_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-            <EditText
-                android:id="@+id/activity_register_et_password"
-                android:layout_width="321dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="21dp"
-                android:layout_marginTop="388dp"
-                android:layout_marginBottom="92dp"
-                android:ems="10"
-                android:hint="**************"
-                android:inputType="textPassword"
-                android:password="true"
-                android:textSize="@dimen/form_elem_size"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    <TextView
+                        android:id="@+id/fragment_register_tv_phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="271dp"
+                        android:layout_marginBottom="226dp"
+                        android:labelFor="@id/activity_register_et_phone"
+                        android:text="*Téléphone"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/label_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+                    <EditText
+                        android:id="@+id/activity_register_et_phone"
+                        android:layout_width="317dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="302dp"
+                        android:layout_marginBottom="174dp"
+                        android:ems="10"
+                        android:hint="079 700 20 10"
+                        android:inputType="number"
+                        android:labelFor="@id/fragment_register_tv_phone"
+                        android:textSize="@dimen/form_elem_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/activity_register_btn_create"
-            android:layout_width="116dp"
-            android:layout_height="56dp"
-            android:layout_gravity="start"
-            android:layout_marginStart="29dp"
-            android:layout_marginEnd="188dp"
-            android:layout_marginBottom="16dp"
-            android:enabled="false"
-            android:text="Créer"
-            android:textColor="@android:color/black"
-            android:textSize="@dimen/label_size"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.108"
-            app:layout_constraintStart_toStartOf="parent"
-            app:rippleColor="#000000" />
+                    <TextView
+                        android:id="@+id/fragment_register_tv_password"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="362dp"
+                        android:layout_marginBottom="137dp"
+                        android:labelFor="@id/fragment_register_et_password"
+                        android:text="*Mot de passe"
+                        android:textColor="@android:color/black"
+                        android:textSize="@dimen/label_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+                    <EditText
+                        android:id="@+id/fragment_register_et_password"
+                        android:layout_width="321dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="21dp"
+                        android:layout_marginTop="388dp"
+                        android:layout_marginBottom="92dp"
+                        android:ems="10"
+                        android:hint="**************"
+                        android:inputType="textPassword"
+                        android:password="true"
+                        android:textSize="@dimen/form_elem_size"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
 
-    <CheckBox
-        android:id="@+id/activity_register_chk_confirm"
-        android:layout_width="342dp"
-        android:layout_height="52dp"
-        android:layout_marginStart="37dp"
-        android:layout_marginTop="606dp"
-        android:layout_marginBottom="84dp"
-        android:text="J'accepte les termes et les conditions d'utilisations."
-        android:textColor="@android:color/black"
-        android:textSize="@dimen/label_size"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <CheckBox
+                    android:id="@+id/fragment_register_chk_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="26dp"
+                    android:layout_marginTop="600dp"
+                    android:layout_marginEnd="58dp"
+                    android:layout_marginBottom="106dp"
+                    android:text="J'accepte les termes et conditions d'utilisations"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
 </FrameLayout>

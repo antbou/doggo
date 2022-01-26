@@ -34,26 +34,21 @@
 
         <TextView
             android:id="@+id/fragment_login_tv_title"
-            android:layout_width="410dp"
-            android:layout_height="46dp"
-            android:layout_marginStart="2dp"
-            android:layout_marginTop="177dp"
-            android:layout_marginBottom="492dp"
+            android:layout_width="417dp"
+            android:layout_height="50dp"
             android:gravity="fill_vertical"
             android:includeFontPadding="false"
             android:text="Connexion"
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Large"
             android:textSize="@dimen/title_size"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            tools:layout_editor_absoluteX="-22dp"
+            tools:layout_editor_absoluteY="44dp" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/frame_Login"
-            android:layout_width="414dp"
-            android:layout_height="wrap_content"
+            android:layout_width="400dp"
+            android:layout_height="277dp"
             android:layout_marginStart="16dp"
             android:layout_marginTop="229dp"
             android:layout_marginEnd="5dp"
@@ -61,10 +56,10 @@
             android:background="@color/doggo_form_background"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.666"
+            app:layout_constraintHorizontal_bias="0.75"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
+            app:layout_constraintVertical_bias="0.598">
 
             <TextView
                 android:id="@+id/fragment_login_tv_create_account"
@@ -171,7 +166,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Button
-                android:id="@+id/fragment_login_btn_register"
+                android:id="@+id/fragment_login_btn_login"
                 android:layout_width="157dp"
                 android:layout_height="53dp"
                 android:layout_gravity="start"
