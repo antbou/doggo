@@ -6,22 +6,26 @@
     android:layout_height="match_parent">
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="53dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginBottom="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@mipmap/menu" />
-
-    <ImageView
         android:id="@+id/imageView8"
         android:layout_width="58dp"
         android:layout_height="56dp"
-        android:layout_marginStart="87dp"
+        android:layout_marginStart="55dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@mipmap/dog" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab8"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_gravity="end|bottom"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="@color/white"
+        android:src="@drawable/ic_baseline_menu_24"
+        app:backgroundTint="@color/black"
+        app:fabCustomSize="55dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
