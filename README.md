@@ -9,7 +9,6 @@
 ```
 git clone https://github.com/antbou/doggo.git
 cd doggo
-git checkout develop
 ```
 
 
