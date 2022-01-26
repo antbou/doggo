@@ -21,41 +21,8 @@
         <item>Diabète</item>
     </string-array>
 
-    <string name="app_name">test</string>
+    <string name="app_name">What the dog</string>
 
-    <!-- TODO apply convention name -->
-    <string name="prompt_email">example@domain.com</string>
-    <string name="prompt_password">***********</string>
-    <string name="action_sign_in">Sign in or register</string>
-    <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
-    <string name="invalid_username">Not a valid username</string>
-    <string name="invalid_password">Password must be >5 characters</string>
-    <string name="login_failed">"Login failed"</string>
-    <string name="title_Mail">Email</string>
-    <string name="title_Password">Mot de passe</string>
-    <string name="title_Forgot_Password">Mot de passe oublié?</string>
-    <string name="title_Create_Account">Créer un compte</string>
-    <string name="title_Login">Authentification</string>
-    <string name="title_activity_login">Connexion</string>
-    <string name="title_Activity_Register">Créer un compte</string>
-
-    <string name="activity_register_tv_lastname">*Nom</string>
-    <string name="activity_register_et_lastname">Doe</string>
-    <string name="activity_register_tv_firstname">*Prénom</string>
-    <string name="activity_register_et_firstname">Jhon</string>
-    <string name="activity_register_tv_phone">*Téléphone</string>
-    <string name="activity_register_et_phone">0797231221</string>
-    <string name="activity_register_tv_mail">*Email</string>
-    <string name="activity_register_et_mail">jhon.doe@example.com</string>
-    <string name="activity_register_tv_password">*Mot de passe</string>
-    <string name="activity_register_et_password">*************</string>
-    <string name="activity_register_tv_password_confirmation">*Confirmer le mot de passe</string>
-    <string name="activity_register_et_password_confirmation">*************</string>
-    <string name="activity_register_btn_create">Créer</string>
-    <string name="activity_register_chk_terms_and_policy">I agree to the Terms of Use and Privacy Policy</string>
-
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
