@@ -13,7 +13,7 @@
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@mipmap/dog" />
+        app:srcCompat="@drawable/ic_lunalogobig" />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab8"
