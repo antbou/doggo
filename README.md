@@ -1,7 +1,7 @@
 ![Android Studio](https://img.shields.io/badge/Android-3DDC84?style=&logo=android&logoColor=white)
-![GitHub contributors](https://img.shields.io/github/contributors/antbou/doggo.git?style=flat-square)
+![GitHub contributors](https://img.shields.io/github/contributors/antbou/doggo.git?style=flat)
 
-#Authors
+# Authors
 - [Ohan Mélodie](https://github.com/melohan)
 - [Bouillant Anthony](https://github.com/antbou/doggo)
 - [Samoutphonh Souphakone](https://github.com/Souphakone)
