@@ -35,6 +35,7 @@
 
         <TextView
             android:id="@+id/fragment_login_tv_title"
+            style="@style/title"
             android:layout_width="417dp"
             android:layout_height="50dp"
             android:layout_marginTop="60dp"
@@ -68,6 +69,7 @@
 
             <TextView
                 android:id="@+id/fragment_login_tv_create_account"
+                style="@style/min_link"
                 android:layout_width="133dp"
                 android:layout_height="19dp"
                 android:layout_marginStart="212dp"
@@ -80,6 +82,7 @@
 
             <TextView
                 android:id="@+id/fragment_login_tv_forgot_password"
+                style="@style/min_link"
                 android:layout_width="133dp"
                 android:layout_height="19dp"
                 android:layout_marginStart="212dp"
@@ -92,6 +95,7 @@
 
             <EditText
                 android:id="@+id/fragment_login_et_password"
+                style="@style/form_element"
                 android:layout_width="243dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="123dp"
@@ -112,6 +116,7 @@
 
             <EditText
                 android:id="@+id/fragment_login_et_mail"
+                style="@style/form_element"
                 android:layout_width="242dp"
                 android:layout_height="49dp"
                 android:layout_marginStart="126dp"
@@ -123,7 +128,6 @@
                 android:selectAllOnFocus="true"
                 android:textAlignment="textStart"
                 android:textColor="@android:color/darker_gray"
-                android:textSize="@dimen/form_elem_size"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -131,6 +135,7 @@
 
             <TextView
                 android:id="@+id/fragment_login_tv_password"
+                style="@style/form_element"
                 android:layout_width="111dp"
                 android:layout_height="39dp"
                 android:layout_marginStart="24dp"
@@ -152,6 +157,7 @@
 
             <TextView
                 android:id="@+id/fragment_login_tv_email"
+                style="@style/form_element"
                 android:layout_width="111dp"
                 android:layout_height="39dp"
                 android:layout_marginStart="6dp"
@@ -172,6 +178,7 @@
 
             <Button
                 android:id="@+id/fragment_login_btn_login"
+                style="@style/button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="61dp"

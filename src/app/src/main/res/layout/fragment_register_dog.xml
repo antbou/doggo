@@ -33,6 +33,7 @@
 
             <TextView
                 android:id="@+id/textView2"
+                style="@style/label"
                 android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
@@ -44,6 +45,7 @@
 
             <EditText
                 android:id="@+id/username"
+                style="@style/form_element"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="26dp"
@@ -56,6 +58,7 @@
 
             <TextView
                 android:id="@+id/textView"
+                style="@style/label"
                 android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
@@ -67,6 +70,7 @@
 
             <Spinner
                 android:id="@+id/spinner"
+                style="@style/form_element"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="26dp"
@@ -77,6 +81,7 @@
 
             <TextView
                 android:id="@+id/textView5"
+                style="@style/label"
                 android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
@@ -88,6 +93,7 @@
 
             <EditText
                 android:id="@+id/editTextDate"
+                style="@style/form_element"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="26dp"
@@ -102,6 +108,7 @@
 
             <TextView
                 android:id="@+id/textView6"
+                style="@style/label"
                 android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
@@ -112,6 +119,7 @@
 
             <Spinner
                 android:id="@+id/spinner4"
+                style="@style/form_element"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="26dp"
@@ -125,6 +133,7 @@
 
             <TextView
                 android:id="@+id/textView7"
+                style="@style/label"
                 android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
@@ -136,6 +145,7 @@
 
             <EditText
                 android:id="@+id/robe"
+                style="@style/form_element"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="26dp"
@@ -148,6 +158,7 @@
 
             <TextView
                 android:id="@+id/textView8"
+                style="@style/label"
                 android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
@@ -178,6 +189,7 @@
 
             <TextView
                 android:id="@+id/textView9"
+                style="@style/label"
                 android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
@@ -208,15 +220,16 @@
 
             <CheckBox
                 android:id="@+id/activity_register_chk_terms_and_policy6"
+                style="@style/min_text"
                 android:layout_width="250dp"
                 android:layout_height="52dp"
                 android:layout_marginTop="700dp"
+                android:text="J'accepte les termes et les conditions d'utilisations."
                 android:textSize="12sp"
                 app:layout_constraintBottom_toTopOf="@+id/button3"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:text="J'accepte les termes et les conditions d'utilisations."/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/button3"
@@ -235,6 +248,7 @@
 
     <TextView
         android:id="@+id/textView15"
+        style="@style/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="36dp"

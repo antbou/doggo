@@ -17,6 +17,7 @@
 
         <TextView
             android:id="@+id/fragment_profile_tv_title"
+            style="@style/title"
             android:layout_width="96dp"
             android:layout_height="0dp"
             android:layout_marginTop="45dp"
@@ -43,6 +44,7 @@
 
             <TextView
                 android:id="@+id/fragment_profile_tv_my_profile"
+                style="@style/text"
                 android:layout_width="348dp"
                 android:layout_height="54dp"
                 android:layout_marginStart="29dp"
@@ -87,6 +89,7 @@
 
             <TextView
                 android:id="@+id/fragment_profile_tv_profile"
+                style="@style/text"
                 android:layout_width="310dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="49dp"
@@ -151,6 +154,7 @@
 
             <TextView
                 android:id="@+id/fragment_profile_tv_my_dogs"
+                style="@style/text"
                 android:layout_width="347dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="29dp"
@@ -213,6 +217,7 @@
 
             <TextView
                 android:id="@+id/fragment_profile_tv_my_dog1"
+                style="@style/text"
                 android:layout_width="310dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="52dp"
@@ -292,6 +297,7 @@
 
             <TextView
                 android:id="@+id/fragment_profile_tv_my_dog2"
+                style="@style/text"
                 android:layout_width="310dp"
                 android:layout_height="52dp"
                 android:layout_marginStart="52dp"

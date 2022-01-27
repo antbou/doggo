@@ -57,8 +57,9 @@
 
                 <TextView
                     android:id="@+id/fragment_race_details_tv_title"
-                    android:layout_width="332dp"
-                    android:layout_height="38dp"
+                    style="@style/title"
+                    android:layout_width="315dp"
+                    android:layout_height="35dp"
                     android:layout_marginStart="7dp"
                     android:layout_marginTop="28dp"
                     android:layout_marginEnd="8dp"
@@ -74,6 +75,7 @@
 
                 <TextView
                     android:id="@+id/fragment_race_details_tv_text_para1"
+                    style="@style/min_text"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="334dp"
@@ -88,6 +90,7 @@
 
                 <TextView
                     android:id="@+id/fragment_race_details_tv_text_para2"
+                    style="@style/min_text"
                     android:layout_width="353dp"
                     android:layout_height="166dp"
                     android:layout_marginTop="519dp"
@@ -101,6 +104,7 @@
 
                 <TextView
                     android:id="@+id/fragment_race_details_tv_title_para2"
+                    style="@style/label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="1dp"
@@ -117,6 +121,7 @@
 
                 <TextView
                     android:id="@+id/fragment_race_details_tv_title_para1"
+                    style="@style/label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="312dp"

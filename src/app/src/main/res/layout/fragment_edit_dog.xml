@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
+    style="@style/form_element"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingLeft="@dimen/fragment_horizontal_margin"
@@ -11,7 +12,7 @@
     android:paddingBottom="@dimen/fragment_vertical_margin"
     tools:context=".fragment_register_dog">
 
-    <include layout="@layout/sandbox"/>
+    <include layout="@layout/sandbox" />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -33,6 +34,7 @@
 
             <TextView
                 android:id="@+id/textView2"
+                style="@style/label"
                 android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
@@ -44,19 +46,21 @@
 
             <EditText
                 android:id="@+id/username"
+                style="@style/form_element"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="51dp"
-                android:text="Doggo"
                 android:hint="Doggo"
                 android:inputType="textEmailAddress"
                 android:selectAllOnFocus="true"
+                android:text="Doggo"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView"
+                style="@style/label"
                 android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
@@ -78,6 +82,7 @@
 
             <TextView
                 android:id="@+id/textView5"
+                style="@style/label"
                 android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
@@ -89,21 +94,23 @@
 
             <EditText
                 android:id="@+id/editTextDate"
+                style="@style/form_element"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="251dp"
                 android:ems="10"
-                android:text="15.09.2015"
                 android:hint="15.09.2015"
                 android:inputType="date"
                 android:minHeight="48dp"
+                android:text="15.09.2015"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="SpeakableTextPresentCheck" />
 
             <TextView
                 android:id="@+id/textView6"
+                style="@style/label"
                 android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
@@ -127,6 +134,7 @@
 
             <TextView
                 android:id="@+id/textView7"
+                style="@style/label"
                 android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
@@ -143,14 +151,15 @@
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="451dp"
                 android:hint="Noir, Blanc ..."
-                android:text="Noir, Blanc"
                 android:inputType="textEmailAddress"
                 android:selectAllOnFocus="true"
+                android:text="Noir, Blanc"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
                 android:id="@+id/textView8"
+                style="@style/label"
                 android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
@@ -181,6 +190,7 @@
 
             <TextView
                 android:id="@+id/textView9"
+                style="@style/label"
                 android:layout_width="wrap_content"
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
@@ -191,6 +201,7 @@
 
             <Spinner
                 android:id="@+id/spinner6"
+                style="@style/label"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="26dp"
@@ -211,18 +222,20 @@
 
             <CheckBox
                 android:id="@+id/activity_register_chk_terms_and_policy6"
+                style="@style/min_text"
                 android:layout_width="250dp"
                 android:layout_height="52dp"
                 android:layout_marginTop="700dp"
+                android:text="J'accepte les termes et les conditions d'utilisations."
                 android:textSize="12sp"
                 app:layout_constraintBottom_toTopOf="@+id/button3"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                android:text="J'accepte les termes et les conditions d'utilisations."/>
+                app:layout_constraintTop_toTopOf="parent" />
 
             <Button
                 android:id="@+id/button3"
+                style="button"
                 android:layout_width="0dp"
                 android:layout_height="48dp"
                 android:layout_marginStart="42dp"
@@ -238,6 +251,7 @@
 
     <TextView
         android:id="@+id/textView15"
+        style="@style/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"

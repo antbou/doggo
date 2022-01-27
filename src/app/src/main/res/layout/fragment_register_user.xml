@@ -25,6 +25,7 @@
 
                 <Button
                     android:id="@+id/fragment_login_btn_register"
+                    style="@style/button"
                     android:layout_width="165dp"
                     android:layout_height="0dp"
                     android:layout_gravity="start"
@@ -73,6 +74,7 @@
 
                     <EditText
                         android:id="@+id/fragment_register_et_confirmation"
+                        style="@style/form_element"
                         android:layout_width="323dp"
                         android:layout_height="56dp"
                         android:layout_marginStart="21dp"
@@ -90,6 +92,7 @@
 
                     <TextView
                         android:id="@+id/fragment_register_tv_confirmation"
+                        style="@style/label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
@@ -105,6 +108,7 @@
 
                     <TextView
                         android:id="@+id/fragment_register_tv_lastname"
+                        style="@style/label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
@@ -120,6 +124,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/fragment_register_tv_firstname"
+                        style="@style/form_element"
                         android:layout_width="321dp"
                         android:layout_height="52dp"
                         android:layout_marginStart="16dp"
@@ -148,6 +153,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/fragment_register_et_lastname"
+                        style="@style/form_element"
                         android:layout_width="321dp"
                         android:layout_height="52dp"
                         android:layout_marginStart="16dp"
@@ -162,6 +168,7 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/fragment_register_et_mail"
+                        style="@style/form_element"
                         android:layout_width="321dp"
                         android:layout_height="52dp"
                         android:layout_marginStart="17dp"
@@ -180,6 +187,7 @@
 
                     <TextView
                         android:id="@+id/fragment_register_tv_mail"
+                        style="@style/label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="15dp"
@@ -195,6 +203,7 @@
 
                     <TextView
                         android:id="@+id/fragment_register_tv_phone"
+                        style="@style/label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
@@ -210,6 +219,7 @@
 
                     <EditText
                         android:id="@+id/activity_register_et_phone"
+                        style="@style/form_element"
                         android:layout_width="317dp"
                         android:layout_height="52dp"
                         android:layout_marginStart="17dp"
@@ -226,6 +236,7 @@
 
                     <TextView
                         android:id="@+id/fragment_register_tv_password"
+                        style="@style/label"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="16dp"
@@ -241,6 +252,7 @@
 
                     <EditText
                         android:id="@+id/fragment_register_et_password"
+                        style="@style/form_element"
                         android:layout_width="321dp"
                         android:layout_height="52dp"
                         android:layout_marginStart="21dp"
@@ -259,6 +271,7 @@
 
                 <CheckBox
                     android:id="@+id/fragment_register_chk_terms"
+                    style="@style/label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="26dp"
@@ -268,8 +281,10 @@
                     android:text="J'accepte les termes et conditions d'utilisations"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
         </LinearLayout>

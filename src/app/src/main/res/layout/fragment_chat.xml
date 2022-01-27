@@ -62,6 +62,7 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <com.google.android.material.textfield.TextInputEditText
+                        style="@style/text"
                         android:layout_width="303dp"
                         android:layout_height="match_parent"
                         android:hint="Bonjour, je souhaiterai avoir plus d'informations sur..." />
@@ -97,6 +98,7 @@
 
                 <TextView
                     android:id="@+id/fragment_chat_ti_write"
+                    style="@style/button"
                     android:layout_width="match_parent"
                     android:layout_height="32dp"
                     android:layout_marginTop="15sp"
