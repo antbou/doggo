@@ -21,8 +21,16 @@
         <item>Diabète</item>
     </string-array>
 
+    <string-array name="dogs">
+        <item>Chien 1</item>
+        <item>Chien 2</item>
+    </string-array>
+
     <string name="app_name">What the dog</string>
 
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rutrum lectus finibus augue ullamcorper placerat. Ut mattis, mauris sit amet rhoncus consequat, tortor est semper nunc, at efficitur turpis.</string>
+    <string name="service_form_title">Informations personnelles</string>
 
 </resources>
