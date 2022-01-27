@@ -1,4 +1,4 @@
-#Styles
+# Styles
 
 This document presents the different styles and conventions.
 
