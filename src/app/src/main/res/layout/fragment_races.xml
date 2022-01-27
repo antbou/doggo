@@ -29,7 +29,7 @@
                 android:layout_height="48dp"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:text="Race 1"
+                android:text="Berger blanc suisse"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -43,7 +43,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:text="Race 2"
+                android:text="Affenpinscher"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -58,7 +58,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:text="Race 3"
+                android:text="Alano espagnol"
                 android:textStyle="bold" />
         </TableRow>
 
@@ -72,7 +72,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:text="Race 4"
+                android:text="Berger roumain de Mioritza "
                 android:textStyle="bold" />
 
         </TableRow>
@@ -87,7 +87,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:text="Race 5"
+                android:text="Bichon à poil frisé"
                 android:textStyle="bold" />
         </TableRow>
 
