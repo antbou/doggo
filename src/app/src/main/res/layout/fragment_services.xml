@@ -34,7 +34,7 @@
                 android:layout_height="48dp"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:text="Service 1"
+                android:text="Coaching en comportement "
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -49,7 +49,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:text="Service 2"
+                android:text="Cours d’éducation privés "
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -64,7 +64,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:text="Service 3"
+                android:text="Conseils personnalisés "
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -79,7 +79,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:text="Service 4"
+                android:text="Accompagnement face à la peur des chiens "
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -94,7 +94,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:text="Service 5"
+                android:text="Aide lors d’une nouvelle arrivée "
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </TableRow>
@@ -109,7 +109,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/border"
                 android:gravity="center"
-                android:text="Service 6"
+                android:text="Autres"
                 android:textSize="16sp"
                 android:textStyle="bold" />
         </TableRow>
