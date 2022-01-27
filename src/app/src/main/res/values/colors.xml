@@ -9,6 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <!-- Doggo theme -->
     <color name="doggo_primary">#3A3939</color>
+    <color name="doggo_primary_variant">#4E4E4E</color>
     <color name="doggo_secondary">#988D89</color>
+    <color name="doggo_secondary_variant">#BDB9B7</color>
+
     <color name="doggo_form_background">#ECECEC</color>
 </resources>
