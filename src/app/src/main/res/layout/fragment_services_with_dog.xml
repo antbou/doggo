@@ -175,15 +175,26 @@
                 app:layout_constraintStart_toEndOf="@+id/date"/>
 
             <Button
+                android:id="@+id/sendRequest"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
-                android:text="Demander le service"
+                android:text="Faire une demande le service"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
                 app:layout_constraintTop_toBottomOf="@+id/date"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"/>
 
+            <TextView
+                android:id="@+id/createAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pas de compte ?"
+                android:textColor="#339CFF"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sendRequest"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 
