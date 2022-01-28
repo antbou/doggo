@@ -1,17 +1,16 @@
 ![Android Studio](https://img.shields.io/badge/Android-3DDC84?style=&logo=android&logoColor=white)
-<!-- Copy-paste in your Readme.md file -->
-
-<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
-  <img src = "https://contrib.rocks/image?repo = antbou/doggo"/>
-</a>
-
-Made with [contributors-img](https://contrib.rocks).
 
 # Authors
 - [Ohan Mélodie](https://github.com/melohan)
 - [Bouillant Anthony](https://github.com/antbou/doggo)
 - [Samoutphonh Souphakone](https://github.com/Souphakone)
 
+## Contributors
+<a href="https://github.com/antbou/doggo/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=antbou/doggo" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
 
 # What The Dog
 
