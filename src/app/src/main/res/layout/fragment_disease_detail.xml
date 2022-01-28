@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment_diseases">
+
+    <include
+        layout="@layout/sandbox"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/diseases"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Maladie n"
+            android:textSize="@dimen/title_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/guideline4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="60dp" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Description"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/diseases"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/description_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec sapien et lorem pretium volutpat quis commodo ante. Proin ultrices arcu non purus commodo porttitor. In hac habitasse platea dictumst. Donec at nisl in eros ultricies convallis eget eu lectus. Vestibulum dignissim molestie mauris, eget dignissim nulla venenatis nec. Donec at nisi ex."
+            android:textAlignment="inherit"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Type"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/description_detail"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/type_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec sapien et lorem pretium volutpat quis commodo ante. Proin ultrices arcu non purus commodo porttitor. In hac habitasse platea dictumst. Donec at nisl in eros ultricies convallis eget eu lectus. Vestibulum dignissim molestie mauris, eget dignissim nulla venenatis nec. Donec at nisi ex."
+            android:textAlignment="inherit"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintTop_toBottomOf="@+id/type" />
+        <TextView
+            android:id="@+id/symptom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Symptôme"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:textSize="@dimen/title_text_size"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/type_detail"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/symptom_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_vertical_margin"
+            android:layout_marginRight="@dimen/activity_vertical_margin"
+            android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec sapien et lorem pretium volutpat quis commodo ante. Proin ultrices arcu non purus commodo porttitor. In hac habitasse platea dictumst. Donec at nisl in eros ultricies convallis eget eu lectus. Vestibulum dignissim molestie mauris, eget dignissim nulla venenatis nec. Donec at nisi ex."
+            android:textAlignment="inherit"
+            android:textSize="@dimen/text_size"
+            app:layout_constraintTop_toBottomOf="@+id/symptom" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
