@@ -39,8 +39,10 @@
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="30dp"
+                android:layout_marginEnd="290dp"
                 android:text="*Nom"
                 app:layout_constraintBottom_toTopOf="@+id/username"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -51,10 +53,12 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="51dp"
+                android:layout_marginEnd="131dp"
                 android:hint="Doggo"
                 android:inputType="textEmailAddress"
                 android:selectAllOnFocus="true"
                 android:text="Doggo"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -65,8 +69,10 @@
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="130dp"
+                android:layout_marginEnd="291dp"
                 android:text="*Sexe"
                 app:layout_constraintBottom_toTopOf="@+id/spinner"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -76,7 +82,9 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="150dp"
+                android:layout_marginEnd="131dp"
                 android:entries="@array/genre"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -87,8 +95,10 @@
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="230dp"
+                android:layout_marginEnd="200dp"
                 android:text="*Date de Naissance"
                 app:layout_constraintBottom_toTopOf="@+id/editTextDate"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -99,11 +109,13 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="251dp"
+                android:layout_marginEnd="131dp"
                 android:ems="10"
                 android:hint="15.09.2015"
                 android:inputType="date"
                 android:minHeight="48dp"
                 android:text="15.09.2015"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:ignore="SpeakableTextPresentCheck" />
@@ -115,7 +127,9 @@
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="330dp"
+                android:layout_marginEnd="267dp"
                 android:text="*Stérilisé"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -125,9 +139,9 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="351dp"
-                android:layout_marginEnd="1dp"
+                android:layout_marginEnd="131dp"
                 android:entries="@array/sterilized"
-                app:layout_constraintEnd_toEndOf="@+id/spinner"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="1.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -139,8 +153,10 @@
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="430dp"
+                android:layout_marginEnd="288dp"
                 android:text="*Robe"
                 app:layout_constraintBottom_toTopOf="@+id/robe"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -150,10 +166,12 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="451dp"
+                android:layout_marginEnd="131dp"
                 android:hint="Noir, Blanc ..."
                 android:inputType="textEmailAddress"
                 android:selectAllOnFocus="true"
                 android:text="Noir, Blanc"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -164,7 +182,9 @@
                 android:layout_height="21dp"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="530dp"
+                android:layout_marginEnd="290dp"
                 android:text="*Race"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -174,7 +194,9 @@
                 android:layout_height="50dp"
                 android:layout_marginStart="26dp"
                 android:layout_marginTop="551dp"
+                android:layout_marginEnd="131dp"
                 android:entries="@array/race"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
@@ -182,10 +204,12 @@
                 android:id="@+id/button5"
                 android:layout_width="100dp"
                 android:layout_height="48dp"
+                android:layout_marginStart="241dp"
                 android:layout_marginTop="551dp"
                 android:layout_marginEnd="16dp"
                 android:text="+"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <TextView
@@ -214,10 +238,12 @@
                 android:id="@+id/button4"
                 android:layout_width="100dp"
                 android:layout_height="48dp"
+                android:layout_marginStart="241dp"
                 android:layout_marginTop="651dp"
                 android:layout_marginEnd="16dp"
                 android:text="+"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <CheckBox
