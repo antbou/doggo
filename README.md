@@ -25,6 +25,7 @@ Through the application, the user will be able to
 2. [Setting up Dev](#setting-up-dev)
 3. [Documentation](#documentation)
     1. [Styles documentation](#technical-documentation)
+    2. [Mockup](#mockup)
 4. [Todo](#todo)
 
 
@@ -41,8 +42,17 @@ cd doggo
 
 ## Documentation
 ### Styles documentation
-- [Technical documentation](documentation/styles.md)
+- [Technical documentation](/documentation/styles.md)
+### Mockup
+- [what-the-dog-v2.pdf](/documentation/what-the-dog-v2.pdf)
+
+## Organization
+We organized and distributed the task using Trello.
+
+![Trello](/documentation/trello.png)
+
 
 ## Todo
 - Semi-private education courses fragment
 - Create bubble message display for chat
+- Add different images of races
