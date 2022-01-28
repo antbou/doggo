@@ -1,5 +1,11 @@
 ![Android Studio](https://img.shields.io/badge/Android-3DDC84?style=&logo=android&logoColor=white)
-![GitHub contributors](https://img.shields.io/github/contributors/antbou/doggo.git?style=flat)
+<!-- Copy-paste in your Readme.md file -->
+
+<a href = "https://github.com/Tanu-N-Prabhu/Python/graphs/contributors">
+  <img src = "https://contrib.rocks/image?repo = antbou/doggo"/>
+</a>
+
+Made with [contributors-img](https://contrib.rocks).
 
 # Authors
 - [Ohan Mélodie](https://github.com/melohan)
