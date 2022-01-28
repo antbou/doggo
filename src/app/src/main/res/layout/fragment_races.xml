@@ -40,90 +40,207 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="52dp"
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
                         android:background="@drawable/border"
-                        android:gravity="center"
-                        android:text="Akita"
-                        android:textSize="@dimen/label_size"
-                        android:textStyle="bold" />
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="7dp"
+                        tools:layout_editor_absoluteY="47dp"
+                        android:layout_weight="1"
+                        >
+
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:gravity="center"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="55dp"
+                            tools:layout_editor_absoluteY="471dp"
+                            android:background="@mipmap/ic_akita" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:gravity="center|left"
+                            android:text="Akita"
+                            android:textSize="@dimen/label_size"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"/>
+
+                    </LinearLayout>
+
                 </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/activity_vertical_margin"
                         android:background="@drawable/border"
-                        android:gravity="center"
-                        android:text="Affenpinscher"
-                        android:textSize="@dimen/label_size"
-                        android:textStyle="bold" />
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="7dp"
+                        tools:layout_editor_absoluteY="47dp">
+
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:gravity="center"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="55dp"
+                            tools:layout_editor_absoluteY="471dp"
+                            android:background="@mipmap/ic_akita" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:gravity="center|left"
+                            android:text="Beagle"
+                            android:textSize="@dimen/label_size"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"/>
+
+                    </LinearLayout>
+
                 </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/activity_vertical_margin"
                         android:background="@drawable/border"
-                        android:gravity="center"
-                        android:text="Beagle"
-                        android:textSize="@dimen/label_size"
-                        android:textStyle="bold" />
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="7dp"
+                        tools:layout_editor_absoluteY="47dp">
+
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:gravity="center"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="55dp"
+                            tools:layout_editor_absoluteY="471dp"
+                            android:background="@mipmap/ic_akita" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:gravity="center|left"
+                            android:text="Berger blanc suisse"
+                            android:textSize="@dimen/label_size"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"/>
+
+                    </LinearLayout>
                 </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/disease_4"
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/activity_vertical_margin"
                         android:background="@drawable/border"
-                        android:gravity="center"
-                        android:text="Berger de Podhale"
-                        android:textSize="@dimen/label_size"
-                        android:textStyle="bold" />
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="7dp"
+                        tools:layout_editor_absoluteY="47dp">
+
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:gravity="center"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="55dp"
+                            tools:layout_editor_absoluteY="471dp"
+                            android:background="@mipmap/ic_akita" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:gravity="center|left"
+                            android:text="Bouvier bernois"
+                            android:textSize="@dimen/label_size"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"/>
+
+                    </LinearLayout>
                 </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/activity_vertical_margin"
                         android:background="@drawable/border"
-                        android:gravity="center"
-                        android:text="Berger blanc suisse"
-                        android:textSize="@dimen/label_size"
-                        android:textStyle="bold" />
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="7dp"
+                        tools:layout_editor_absoluteY="47dp">
+
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:gravity="center"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="55dp"
+                            tools:layout_editor_absoluteY="471dp"
+                            android:background="@mipmap/ic_akita" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:gravity="center|left"
+                            android:text="Boxer"
+                            android:textSize="@dimen/label_size"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"/>
+
+                    </LinearLayout>
                 </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="48dp"
+                    <LinearLayout
+                        android:layout_width="110dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/activity_vertical_margin"
                         android:background="@drawable/border"
-                        android:gravity="center"
-                        android:text="Bouvier bernois"
-                        android:textSize="@dimen/label_size"
-                        android:textStyle="bold" />
+                        android:orientation="horizontal"
+                        tools:layout_editor_absoluteX="7dp"
+                        tools:layout_editor_absoluteY="47dp">
+
+                        <ImageView
+                            android:scaleType="centerCrop"
+                            android:gravity="center"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_marginStart="55dp"
+                            tools:layout_editor_absoluteY="471dp"
+                            android:background="@mipmap/ic_akita" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="70dp"
+                            android:gravity="center|left"
+                            android:text="Whippet"
+                            android:textSize="@dimen/label_size"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="15dp"/>
+
+                    </LinearLayout>
                 </TableRow>
             </TableLayout>
 
@@ -145,23 +262,12 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:iconifiedByDefault="false"
-            android:queryHint="Chercher une une race"
+            android:queryHint="Chercher  une race"
             app:layout_constraintEnd_toStartOf="@+id/imageButton"
             app:layout_constraintHorizontal_chainStyle="packed"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_chainStyle="packed" />
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginEnd="9dp"
-            android:src="@drawable/filter"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/searchView"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
@@ -172,10 +278,15 @@
         android:id="@+id/textView16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="173dp"
         android:text="Races"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="24sp"
-        tools:layout_editor_absoluteX="172dp"
-        tools:layout_editor_absoluteY="16dp" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
