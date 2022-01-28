@@ -80,61 +80,65 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textSize="16sp"
                 android:hint="Personne"
                 android:inputType="text"
+                android:minHeight="48dp"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/formTitle"/>
+                app:layout_constraintTop_toBottomOf="@+id/formTitle" />
 
             <EditText
                 android:id="@+id/userName"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textSize="16sp"
                 android:hint="Connectée"
                 android:inputType="text"
+                android:minHeight="48dp"
+                android:textSize="16sp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userFirstName"/>
+                app:layout_constraintTop_toBottomOf="@+id/userFirstName" />
 
             <EditText
                 android:id="@+id/locality"
                 android:layout_width="248dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:textSize="16sp"
                 android:hint="Lieu"
                 android:inputType="text"
+                android:minHeight="48dp"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@+id/userName"
-                app:layout_constraintTop_toBottomOf="@+id/userName"/>
+                app:layout_constraintTop_toBottomOf="@+id/userName" />
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@android:drawable/ic_dialog_map"
+                app:layout_constraintStart_toEndOf="@+id/locality"
                 app:layout_constraintTop_toBottomOf="@+id/userName"
-                app:layout_constraintStart_toEndOf="@+id/locality"/>
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <EditText
                 android:id="@+id/date"
                 android:layout_width="248dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
-                android:layout_marginBottom="8dp"
-                android:textSize="16sp"
                 android:hint="Date"
+                android:minHeight="48dp"
+                android:textSize="16sp"
                 app:layout_constraintStart_toStartOf="@+id/locality"
-                app:layout_constraintTop_toBottomOf="@+id/locality"/>
+                app:layout_constraintTop_toBottomOf="@+id/locality" />
 
             <ImageButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@android:drawable/ic_menu_my_calendar"
+                app:layout_constraintStart_toEndOf="@+id/date"
                 app:layout_constraintTop_toBottomOf="@+id/locality"
-                app:layout_constraintStart_toEndOf="@+id/date"/>
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <Button
                 android:layout_width="300dp"

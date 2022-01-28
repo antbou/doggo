@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="24dp"
                 android:text="@string/service_form_title"
-                android:textSize="18sp"
+                android:textSize="@dimen/title_text_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/serviceDescription"/>
@@ -64,48 +64,52 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textSize="16sp"
                 android:hint="Nom"
                 android:inputType="text"
+                android:minHeight="48dp"
+                android:textSize="@dimen/form_elem_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/formTitle"/>
+                app:layout_constraintTop_toBottomOf="@+id/formTitle" />
 
             <EditText
                 android:id="@+id/userName"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textSize="16sp"
                 android:hint="Prénom"
                 android:inputType="text"
+                android:minHeight="48dp"
+                android:textSize="@dimen/form_elem_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userFirstName"/>
+                app:layout_constraintTop_toBottomOf="@+id/userFirstName" />
 
             <EditText
                 android:id="@+id/userMail"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textSize="16sp"
                 android:hint="Email"
                 android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:textSize="@dimen/form_elem_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userName"/>
+                app:layout_constraintTop_toBottomOf="@+id/userName" />
 
             <EditText
                 android:id="@+id/userPhone"
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="8dp"
-                android:textSize="16sp"
                 android:hint="Téléphone"
                 android:inputType="phone"
+                android:minHeight="48dp"
+                android:textSize="@dimen/form_elem_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userMail"/>
+                app:layout_constraintTop_toBottomOf="@+id/userMail" />
 
             <TextView
                 android:id="@+id/spinnerDogs"
@@ -113,7 +117,7 @@
                 android:layout_height="wrap_content"
                 android:hint="Sélectionner le chien"
                 android:layout_margin="8dp"
-                android:textSize="18sp"
+                android:textSize="@dimen/form_elem_size"
                 android:drawableEnd="@android:drawable/arrow_down_float"
                 android:background="@android:drawable/editbox_background"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -127,7 +131,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
-                android:textSize="16sp"
+                android:textSize="@dimen/form_elem_size"
                 android:hint="Lieu"
                 android:inputType="text"
                 app:layout_constraintStart_toStartOf="@+id/spinnerDogs"
@@ -137,8 +141,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@android:drawable/ic_dialog_map"
+                app:layout_constraintStart_toEndOf="@+id/locality"
                 app:layout_constraintTop_toBottomOf="@+id/spinnerDogs"
-                app:layout_constraintStart_toEndOf="@+id/locality"/>
+                tools:ignore="SpeakableTextPresentCheck" />
 
             <EditText
                 android:id="@+id/date"
@@ -146,7 +151,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp"
                 android:layout_marginBottom="8dp"
-                android:textSize="16sp"
+                android:textSize="@dimen/form_elem_size"
                 android:hint="Date"
                 app:layout_constraintStart_toStartOf="@+id/locality"
                 app:layout_constraintTop_toBottomOf="@+id/locality"/>
@@ -155,8 +160,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:src="@android:drawable/ic_menu_my_calendar"
+                app:layout_constraintStart_toEndOf="@+id/date"
                 app:layout_constraintTop_toBottomOf="@+id/locality"
-                app:layout_constraintStart_toEndOf="@+id/date"/>
+                tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
             <Button
                 android:id="@+id/sendRequest"
@@ -174,8 +180,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Pas de compte ?"
-                android:textColor="#339CFF"
-                android:textSize="18sp"
+                android:textColor="@color/design_default_color_primary_variant"
+                android:textSize="@dimen/title_text_size"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/sendRequest"/>
