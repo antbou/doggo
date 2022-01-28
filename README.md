@@ -47,7 +47,7 @@ cd doggo
 - [what-the-dog-v2.pdf](/documentation/what-the-dog-v2.pdf)
 
 ## Organization
-We organized and distributed the task using Trello.
+We organized and distributed tasks using Trello.
 
 ![Trello](/documentation/trello.png)
 
@@ -55,4 +55,4 @@ We organized and distributed the task using Trello.
 ## Todo
 - Semi-private education courses fragment
 - Create bubble message display for chat
-- Add different images of races
+- Add different dog breed images
