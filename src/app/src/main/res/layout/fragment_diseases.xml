@@ -43,20 +43,34 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:iconifiedByDefault="false"
-            android:queryHint="Chercher une maladie" />
+            android:queryHint="Chercher une maladie"
+            app:layout_constraintBottom_toTopOf="@+id/chipGroup"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
 
         <ImageButton
+            android:id="@+id/imageButton"
             android:layout_width="wrap_content"
-            android:layout_height="48dp"
+            android:layout_height="0dp"
+            android:layout_marginEnd="9dp"
             android:src="@drawable/filter"
+            app:layout_constraintBottom_toTopOf="@+id/chipGroup"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/searchView"
-            tools:ignore="MissingConstraints" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints,SpeakableTextPresentCheck" />
 
 
         <com.google.android.material.chip.ChipGroup
+            android:id="@+id/chipGroup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:layout_editor_absoluteY="48dp">
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/searchView"
+            app:layout_constraintTop_toBottomOf="@+id/imageButton">
 
             <com.google.android.material.chip.Chip
                 android:id="@+id/chip_1"
@@ -129,53 +143,59 @@
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
             <TableLayout
+                android:id="@+id/tableLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:stretchColumns="*"
-                app:layout_constraintHorizontal_bias="0.8"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent">
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                app:layout_constraintHorizontal_bias="0.8"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
+                <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="52dp"
-                    android:background="@drawable/border"
-                    android:gravity="center"
-                    android:text="Maladie 1"
-                    android:textSize="@dimen/label_size"
-                    android:textStyle="bold" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    android:layout_height="match_parent">
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="@dimen/activity_vertical_margin"
-                    android:background="@drawable/border"
-                    android:gravity="center"
-                    android:text="Maladie 2"
-                    android:textSize="@dimen/label_size"
-                    android:textStyle="bold" />
-            </TableRow>
-            <TableRow
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="Maladie 1"
+                        android:textSize="@dimen/label_size"
+                        android:textStyle="bold" />
+                </TableRow>
 
-                <TextView
+                <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="48dp"
-                    android:layout_marginTop="@dimen/activity_vertical_margin"
-                    android:background="@drawable/border"
-                    android:gravity="center"
-                    android:text="Maladie 3"
-                    android:textSize="@dimen/label_size"
-                    android:textStyle="bold" />
-            </TableRow>
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="Maladie 2"
+                        android:textSize="@dimen/label_size"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:layout_marginTop="@dimen/activity_vertical_margin"
+                        android:background="@drawable/border"
+                        android:gravity="center"
+                        android:text="Maladie 3"
+                        android:textSize="@dimen/label_size"
+                        android:textStyle="bold" />
+                </TableRow>
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -191,6 +211,7 @@
                         android:textSize="@dimen/label_size"
                         android:textStyle="bold" />
                 </TableRow>
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
@@ -205,6 +226,7 @@
                         android:textSize="@dimen/label_size"
                         android:textStyle="bold" />
                 </TableRow>
+
                 <TableRow
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">

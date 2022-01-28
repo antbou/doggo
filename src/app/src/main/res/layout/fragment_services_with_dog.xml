@@ -24,7 +24,7 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="@+id/locality"
             app:layout_constraintTop_toBottomOf="@+id/locality">
 
@@ -118,11 +118,11 @@
                 android:hint="Sélectionner le chien"
                 android:layout_margin="8dp"
                 android:textSize="@dimen/form_elem_size"
-                android:drawableEnd="@android:drawable/arrow_down_float"
                 android:background="@android:drawable/editbox_background"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/userPhone"/>
+                app:layout_constraintTop_toBottomOf="@+id/userPhone"
+                app:drawableEndCompat="@android:drawable/arrow_down_float" />
 
 
             <EditText
@@ -154,7 +154,8 @@
                 android:textSize="@dimen/form_elem_size"
                 android:hint="Date"
                 app:layout_constraintStart_toStartOf="@+id/locality"
-                app:layout_constraintTop_toBottomOf="@+id/locality"/>
+                app:layout_constraintTop_toBottomOf="@+id/locality"
+                android:inputType="date" />
 
             <ImageButton
                 android:layout_width="wrap_content"
