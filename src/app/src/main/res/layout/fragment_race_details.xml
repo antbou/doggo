@@ -6,22 +6,35 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".race_details">
-    <include layout="@layout/sandbox"/>
 
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/sandbox" />
+
+    <TextView
+        android:id="@+id/fragment_race_details_tv_title"
+        style="@style/title"
+        android:layout_width="315dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="24dp"
+        android:text="American Staffordshire Terrier "
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/title_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:layout_width="374dp"
-        android:layout_height="678dp"
-        android:layout_marginStart="21dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="17dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="362dp"
+        android:layout_height="462dp"
+        android:layout_marginTop="77dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.406">
+        app:layout_constraintStart_toStartOf="@+id/include3"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,92 +42,15 @@
             android:orientation="vertical">
 
             <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="347dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="347dp"
-                    android:layout_height="221dp"
-                    android:layout_marginTop="78dp"
-                    android:layout_marginBottom="386dp"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <ImageView
-                        android:id="@+id/fragment_race_details_iv_img"
-                        android:layout_width="373dp"
-                        android:layout_height="233dp"
-                        android:contentDescription="Dog image"
-                        android:src="@drawable/pitt_race_details"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <TextView
-                    android:id="@+id/fragment_race_details_tv_title"
-                    style="@style/title"
-                    android:layout_width="315dp"
-                    android:layout_height="35dp"
-                    android:layout_marginStart="7dp"
-                    android:layout_marginTop="28dp"
-                    android:layout_marginEnd="8dp"
-                    android:layout_marginBottom="619dp"
-                    android:text="American Staffordshire Terrier "
-                    android:textAlignment="center"
-                    android:textColor="@android:color/black"
-                    android:textSize="@dimen/title_size"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/fragment_race_details_tv_text_para1"
-                    style="@style/min_text"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="334dp"
-                    android:layout_marginBottom="207dp"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec sapien et lorem pretium volutpat quis commodo ante. Proin ultrices arcu non purus commodo porttitor. In hac habitasse platea dictumst. Donec at nisl in eros ultricies convallis eget eu lectus. Vestibulum dignissim molestie mauris, eget dignissim nulla venenatis nec. Donec at nisi ex."
-                    android:textAlignment="inherit"
-                    android:textSize="@dimen/text_size"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/fragment_race_details_tv_text_para2"
-                    style="@style/min_text"
-                    android:layout_width="353dp"
-                    android:layout_height="166dp"
-                    android:layout_marginTop="519dp"
-                    android:text="In tincidunt tincidunt volutpat. Donec ac consectetur nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque tristique tortor et dui aliquam maximus. Proin commodo semper est, in fringilla lacus mattis quis. Pellentesque vel pretium est, vitae rutrum erat. Vestibulum molestie, ante sit amet pulvinar iaculis, nunc velit finibus lorem, in suscipit elit neque at nulla. Sed nec tellus luctus, vehicula quam a, scelerisque mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi mollis orci purus, a luctus nulla bibendum nec. In pharetra cursus felis in bibendum."
-                    android:textAlignment="inherit"
-                    android:textSize="@dimen/text_size"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/fragment_race_details_tv_title_para2"
-                    style="@style/label"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="1dp"
-                    android:layout_marginTop="497dp"
-                    android:layout_marginEnd="264dp"
-                    android:layout_marginBottom="166dp"
-                    android:text="Personalité"
-                    android:textSize="@dimen/title_text_size"
-                    android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
+                <ImageView
+                    android:id="@+id/fragment_race_details_iv_img"
+                    android:layout_width="0dp"
+                    android:layout_height="233dp"
+                    android:contentDescription="Dog image"
+                    android:src="@drawable/pitt_race_details"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -124,16 +60,58 @@
                     style="@style/label"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="312dp"
-                    android:layout_marginEnd="264dp"
-                    android:layout_marginBottom="351dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginTop="248dp"
+                    android:layout_marginEnd="272dp"
                     android:text="Description"
                     android:textSize="@dimen/title_text_size"
                     android:textStyle="bold"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/fragment_race_details_tv_text_para1"
+                    style="@style/min_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_marginStart="2dp"
+                    android:layout_marginEnd="2dp"
+                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec sapien et lorem pretium volutpat quis commodo ante. Proin ultrices arcu non purus commodo porttitor. In hac habitasse platea dictumst. Donec at nisl in eros ultricies convallis eget eu lectus. Vestibulum dignissim molestie mauris, eget dignissim nulla venenatis nec. Donec at nisi ex."
+                    android:textAlignment="inherit"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fragment_race_details_tv_title_para1" />
+
+                <TextView
+                    android:id="@+id/fragment_race_details_tv_text_para2"
+                    style="@style/min_text"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:layout_marginStart="2dp"
+                    android:text="In tincidunt tincidunt volutpat. Donec ac consectetur nunc. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque tristique tortor et dui aliquam maximus. Proin commodo semper est, in fringilla lacus mattis quis. Pellentesque vel pretium est, vitae rutrum erat. Vestibulum molestie, ante sit amet pulvinar iaculis, nunc velit finibus lorem, in suscipit elit neque at nulla. Sed nec tellus luctus, vehicula quam a, scelerisque mauris. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Morbi mollis orci purus, a luctus nulla bibendum nec. In pharetra cursus felis in bibendum."
+                    android:textAlignment="inherit"
+                    android:textSize="@dimen/text_size"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fragment_race_details_tv_title_para2" />
+
+                <TextView
+                    android:id="@+id/fragment_race_details_tv_title_para2"
+                    style="@style/label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="276dp"
+                    android:text="Personalité"
+                    android:textSize="@dimen/title_text_size"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fragment_race_details_tv_text_para1" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
